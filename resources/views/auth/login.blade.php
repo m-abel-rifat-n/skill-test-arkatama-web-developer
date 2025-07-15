@@ -18,6 +18,34 @@
       padding: 0;
     }
 
+     /* KANAN */
+    .kanan {
+       position: fixed;
+      top: 50px;
+      right: -40px;
+      /* display: flex;
+      align-items: center;
+      gap: 15px;
+      z-index: 1000; */
+        width: 100%;
+      max-width: 600px;
+      padding: 60px 40px;
+    }
+
+   .kanan img {
+  width: 600px;         /* ukuran pasti */
+  max-width: 100%;      /* agar tidak melebihi lebar layar */
+  height: auto;
+  position: relative;   /* BUKAN fixed */
+}
+
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+    }
+
     .login-section {
       min-height: 100vh;
     }
@@ -31,13 +59,13 @@
       box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     }
 
-    .bus-img {
+    /* .bus-img {
       width: 100%;
       height: 100vh;
       object-fit: cover;
       object-position: right;
       user-drag: none;
-    }
+    } */
 
     .input-group-text {
       cursor: pointer;
@@ -103,14 +131,9 @@
         </div>
       </div>
 
-      <!-- Right Gambar Bus -->
-      <div class="col-md-7 d-none d-md-flex align-items-center justify-content-end pe-0">
-        <img src="{{ asset('images/bus.png') }}" alt="Bus Travel"
-     style="width: 100%; max-width: 480px; max-height: 500px; object-fit: contain; object-position: right; margin-left: auto;"
-     draggable="false">
-
-      </div>
-    </div>
+       <!-- KANAN -->
+  <div class="kanan">
+    <img src="images/bus.png" alt="Foto Travel">
   </div>
 
   <!-- Bootstrap JS -->
