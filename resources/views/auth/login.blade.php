@@ -14,6 +14,7 @@
 
   <style>
     body {
+       background-color: #ffffff;
       margin: 0;
       padding: 0;
     }
@@ -80,10 +81,6 @@
       <!-- Left Login Form -->
       <div class="col-lg-5 d-flex align-items-center justify-content-center login-section">
         <div class="login-box">
-          <!-- Logo -->
-          <div class="text-primary fw-bold mb-3">
-            🚍 Travel Jaya <small class="text-muted">ARKATAMA MALANG</small>
-          </div>
 
           <h3 class="fw-bold mb-1">Login Akun</h3>
           <p class="text-muted mb-4">Hi, Selamat Datang! #SahabatTravel</p>
@@ -94,7 +91,7 @@
             <div class="mb-3">
               <label>Email*</label>
               <input type="email" name="email" class="form-control @error('email') is-invalid @enderror"
-                     placeholder="cth: email@domain.com" required>
+                     placeholder="ex. email@domain.com" required>
               @error('email') <div class="invalid-feedback">{{ $message }}</div> @enderror
             </div>
 
